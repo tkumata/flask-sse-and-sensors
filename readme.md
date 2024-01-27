@@ -55,7 +55,7 @@ Or accessing `http://<raspberrypi>:5000/` using a browser.
 Please look at server-pir.py.
 
 - Raspberry Pi Zero WH
-- Grove PIR motion sensor
+- PIR Motion Sensor
   - Connect VCC on sensor to 3V3 on Raspberry Pi.
   - Connect GND on sensor to GND on Raspberry Pi.
   - Connect SIG on sensor to GPIO17(11) on Raspberry Pi.
