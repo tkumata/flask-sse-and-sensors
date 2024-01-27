@@ -1,6 +1,17 @@
 # Flask SSE and Raspiberry Pi Sensors
 
-Let make a backend to push sensor data from server to clients using Flask SSE.
+Let make a backend to push sensor data from server to clients using Flask SSE. SSE is Server-Sent Events.
+
+```text
++--------+                   +--------+
+|        |<-- SSE Request ---|        |
+| Server |-- SSE Response -->| Client |
+|        |-- SSE Response -->|        |
+|        |-- SSE Response -->|        |
++--------+                   +--------+
+```
+
+Install Flask library into your Raspberry Pi.
 
 ```shell
 sudo pip3 install flask
@@ -8,7 +19,7 @@ sudo pip3 install flask
 
 ## Ultrasonic Distance Sensor
 
-server-hcsr04.py
+Please look at server-hcsr04.py.
 
 - Raspberry Pi Zero WH
 - Grove Ultrasonic Distance Sensor
@@ -16,11 +27,11 @@ server-hcsr04.py
   - Connect GND on sensor to GND on Raspberry Pi.
   - Connect SIG on sensor to GPIO17(11) on Raspberry Pi.
 
-```python
+```shell
 python3 server-hcsr04.py
 ```
 
-Then accessing to Raspberry Pi using curl. You can get the result that server push sensor data.
+Then accessing to Raspberry Pi using curl. You can get the result that server push sensor data, Like a below.
 
 ```shell
 curl "http://<raspberrypi>:5000/sse"
@@ -41,7 +52,7 @@ Or accessing `http://<raspberrypi>:5000/` using a browser.
 
 ## Passive Infrared Ray motion sensor
 
-server-pir.py
+Please look at server-pir.py.
 
 - Raspberry Pi Zero WH
 - Grove PIR motion sensor
@@ -49,7 +60,7 @@ server-pir.py
   - Connect GND on sensor to GND on Raspberry Pi.
   - Connect SIG on sensor to GPIO17(11) on Raspberry Pi.
 
-```python
+```shell
 python3 server-pir.py
 ```
 
