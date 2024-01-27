@@ -23,7 +23,7 @@ python3 server-hcsr04.py
 Then curl to Raspberry Pi.
 
 ```shell
-curl "http://raspberrypi.local:5000/sse"
+curl "http://<raspberrypi>:5000/sse"
 data: {"distance": "55.2"}
 data: {"distance": "49.7"}
 data: {"distance": "519.4"}
@@ -54,7 +54,7 @@ python3 server-pir.py
 Then curl to Raspberry Pi.
 
 ```shell
-curl "http://raspberrypi.local:5000/sse"
+curl "http://<raspberrypi>:5000/sse"
 data: {"motion": "True"}
 data: {"motion": "True"}
 data: {"motion": "False"}
