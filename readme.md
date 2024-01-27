@@ -20,7 +20,7 @@ server-hcsr04.py
 python3 server-hcsr04.py
 ```
 
-Then curl to Raspberry Pi.
+Then accessing to Raspberry Pi using curl. You can get the result that server push sensor data.
 
 ```shell
 curl "http://<raspberrypi>:5000/sse"
@@ -37,6 +37,8 @@ data: {"distance": "49.1"}
 :
 ```
 
+Or accessing `http://<raspberrypi>:5000/` using a browser.
+
 ## Passive Infrared Ray motion sensor
 
 server-pir.py
@@ -51,7 +53,7 @@ server-pir.py
 python3 server-pir.py
 ```
 
-Then curl to Raspberry Pi.
+Then accessing to Raspberry Pi using curl.
 
 ```shell
 curl "http://<raspberrypi>:5000/sse"
