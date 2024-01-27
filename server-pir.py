@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
-pir = MonitorSensor(17)
+pir = MonitorSensor(4)
 
 
 @app.route("/sse")
