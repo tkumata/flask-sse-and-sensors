@@ -58,7 +58,7 @@ Please look at server-pir.py.
 - PIR Motion Sensor
   - Connect VCC on sensor to 3V3 on Raspberry Pi.
   - Connect GND on sensor to GND on Raspberry Pi.
-  - Connect SIG on sensor to GPIO4 on Raspberry Pi.
+  - Connect OUT on sensor to GPIO4 on Raspberry Pi.
 
 ```shell
 python3 server-pir.py
