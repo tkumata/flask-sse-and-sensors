@@ -42,7 +42,7 @@ data: {"distance": "49.1"}
 server-pir.py
 
 - Raspberry Pi Zero WH
-- Grove Ultrasonic Distance Sensor
+- Grove PIR motion sensor
   - Connect VCC on sensor to 3V3 on Raspberry Pi.
   - Connect GND on sensor to GND on Raspberry Pi.
   - Connect SIG on sensor to GPIO17(11) on Raspberry Pi.
